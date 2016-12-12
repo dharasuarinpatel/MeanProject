@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project-2_dxp3878<</title>
+    <link  rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js" type="text/javascript"></script>
+    <script src="app.js"></script>
+    <!-- <style src="style.css" rel="stylesheet" type="text/css"></style> -->
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="main">
+    <div class="header">
+        <p>CSE:5335 Project-2</p>
+    </div>
+    <div class="data">
+
+        <div class="new" ng-repeat="p in player" >
+            <p style="color: aliceblue">Newlly arriving record.</p>
+            <marquee  bgcolor=" black" width="350px " height=" 40px" direction="up" ><strong>{{p.PlayerID + " " + "."  + p.FirstName + "   " + p.LastName + "  " + p.Countryp + "  " + p.Position}}</strong></marquee>
+            <!--<p class="animation">{{p.PlayerID + " " +p.FirstName + " " + p.LastName + " " + p.Countryp + " " + p.Position}}<p/>-->
+        </div>
+
+        <table border="1">
+            <thead style="color: brown; background-color: cornsilk">
+            <tr>
+                <th>PlayerID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Country</th>
+                <th>Position</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="m in players  | limitTo:20 | orderBy:'PlayerID':false">
+                <!--<td>{{count}}</td>-->
+                <td style="color: lemonchiffon"><strong>{{m.PlayerID}}</strong></td>
+                <td style="color: lemonchiffon">{{m.FirstName}}</td>
+                <td style="color: lemonchiffon">{{m.LastName}}</td>
+                <td style="color: lemonchiffon">{{m.Country}}</td>
+                <td style="color: lemonchiffon">{{m.Position}}</td>
+
+                <!--<td>{{$index}}</td>-->
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>

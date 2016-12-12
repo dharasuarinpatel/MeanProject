@@ -1,0 +1,73 @@
+body{
+
+            background-image: url("images (1).jpeg");
+            margin:auto;
+            background-repeat: no-repeat;
+            background-size:cover;
+
+        }
+        div.main{
+            background-color:rgba(255,0,0,0);
+            margin: auto;
+            width: 60%;
+            padding: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        div.header{
+            height: 100px;
+            text-align: center;
+            text-shadow: 1px 1px white;
+            /*text-decoration: blink;*/
+            font-size: 50px;
+            font-variant: small-caps;
+            color:cornflowerblue;
+            border-bottom-color: lightgoldenrodyellow;
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            /*box-decoration-break: slice;*/
+            /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+            /*border: 3px solid dodgerblue;*/
+        }
+        div.data{
+            height: 700px;
+            margin: auto;
+            font-size: 15px;
+            color: ghostwhite;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            /*border: 3px solid dodgerblue;*/
+        }
+
+        table {
+            width: 70%;
+            background-color:rgba(80,0,100,0.3);
+            border-style: none;
+            border-width: 2px;
+            border-color: cadetblue ;
+            margin: 0 auto; /* or margin: 0 auto 0 auto */
+            margin-top: 35px;
+        }
+        div.new{
+            margin: 0 auto;
+            margin-top: 20px;
+            color:aquamarine  ;
+            /*padding: 20px;*/
+
+        }
+
+        /*p.animation{*/
+        /*background: black;*/
+        /*margin: auto;*/
+        /*color:aqua;*/
+        /*position: relative;*/
+        /*font-weight: bold;*/
+        /*-webkit-animation: mymove 5s infinite; !* Chrome, Safari, Opera *!*/
+        /*animation: mymove 5s infinite;*/
+        /*-webkit-animation-timing-function: ease;*/
+        /*}*/
+        /*@-webkit-keyframes mymove {*/
+        /*from {left: 0px;}*/
+        /*to {left: 300px;}*/
+        /*}*/
+
